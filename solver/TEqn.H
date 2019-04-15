@@ -5,7 +5,8 @@
     volScalarField alphaEff("alphaEff", turbulence->nu()/Sch + alphat);
 
     // update update the particle velocity
-    U_p = U-(1.0-beta)*T_p*(fvc::div(fvc::flux(U), U)-g); // Dr. bala's formula
+    // Dr. bala's formula and I asume the terminal particle reynolds number.
+    U_p = U-(1.0-beta)*T_p*(fvc::div(fvc::flux(U), U)-g); // The T_p really should change based on the explicit reynodls number formula
     U_p.correctBoundaryConditions();
 
     Info<< "Calculating particle face flux field phi_p\n" << endl;
