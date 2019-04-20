@@ -5,4 +5,4 @@ Developed based on the native OpenFOAM solver of buoyantBoussinesqSimpleFoam and
 
 # Notes
 
-For complex problem, this solver struggling converge. Instead, it is recommanded to run the transient solver to steady state.
+For complex problem, this solver is struggling with convergence. Instead, it is recommanded to run the transient solver to steady state.
