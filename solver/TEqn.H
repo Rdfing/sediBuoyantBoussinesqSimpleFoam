@@ -7,7 +7,6 @@
     volScalarField alphaEff("alphaEff", alphat);
     
     // update update the particle velocity
-    // Dr. bala's formula and I asume the terminal particle reynolds number.
     U_p = U-(1.0-beta)*T_p*(fvc::div(fvc::flux(U), U)-g); // The T_p really should change based on the explicit Reynolds number formula
     U_p.correctBoundaryConditions();
 
