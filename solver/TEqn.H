@@ -4,6 +4,7 @@
 
     // volScalarField alphaEff("alphaEff", turbulence->nu()/Sch + alphat);
     // One can ignore the molecture contribution to the diffusion in the turbulent flow with RANS approach
+    // can be a problem near wall
     volScalarField alphaEff("alphaEff", alphat);
     
     // update update the particle velocity
