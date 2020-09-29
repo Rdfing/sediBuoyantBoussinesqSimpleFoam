@@ -27,7 +27,7 @@ Application
 Description
     Steady-state solver for sedimentation, buoyant, turbulent flow of incompressible fluids.
 
-    Developed based on the native OpenFOAM solver of buoyantBoussinesqSimpleFoam and equilibrium-Euler formula of Dr. Bala
+    Developed based on the native OpenFOAM solver of buoyantBoussinesqSimpleFoam and equilibrium-Euler formula
 
     Developed by Haochen Li at Univeristy of Florida 2019/4/12
 
